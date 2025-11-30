@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee House - Good Time. Great Coffee.</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" type="image/x-icon" href="assets/coffee_house.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal"></script>
+  
+  
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav_header">
+        <div class="nav_logo">
+          <a href="">
+            <img src="assets/logo_coffee.png" alt="Logo" class="nav_logo_dark">
+            <img src="assets/logo.png" alt="Logo" class="nav_logo_light">
+          </a>
+        </div>
+
+        <div id="menu-btn" class="nav_menu_btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+
+      <ul class="nav_links" id="nav_links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#special">Special</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a onclick="openCart()" id="open-cart-btn" style="cursor: pointer;">Cart</a></li>
+          <li><a href="#" onclick="openLoginModal()">Bean</a></li>
+          <li><a href="#" onclick="openRegisterModal()">Sprout</a></li>
+          <li><a href="#contact">Reserve</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="section_container header_container" id="home">
+
+      <div class="header_image">
+        <img src="assets/head_logo.png" alt="Header">
+      </div>
+ 
+      <div class="header_content">
+        <h2>IT IS GOOD TIME FOR THE GREAT TASTE OF COFFEE</h2>
+        <h1>COFFEE<br><span>WEEK</span></h1>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="section_container banner_container" id="special">
+    <div class="banner_card">
+      <p>TRY IT OUT NOW</p>
+      <h4>MOST POPULAR COFFEE</h4>
+    </div>
+
+    <div class="banner_card">
+      <p>TRY IT OUT NOW</p>
+      <h4>MOST FU <br>MORE TASTE</h4>
+    </div>
+
+    <div class="banner_card">
+      <p>TRY IT OUT NOW</p>
+      <h4>HOT & CHILL</h4>
+    </div>
+
+  </section>
+
+  <section class="section_container order_container" id="menu">
+    <h3>ALWAYS TASTEY COFFEE</h3>
+    <h2 class="section_header">CHOOSE & ENJOY</h2>
+
+    <p class="section_description">
+      Wheather you crave classic flavors or daring cobination, title is where your culinary journey bings. Indulge your craving and savor every bite ads you create your favourite.
+    </p>
+
+    <div class="order_grid">
+
+    <div class="order_card" data-price="5">
+      <img src="assets/order-1.png" alt="order">
+      <h4>Capacineu</h4>
+      <p>Lorem ipsum dolor sit amet consectetur...</p>
+      <button class="btn">ORDER NOW</button>
+    </div>
+
+    <div class="order_card" data-price="6">
+      <img src="assets/order-2.png" alt="order">
+      <h4>Cold Coffee</h4>
+      <p>Lorem ipsum dolor sit amet consectetur...</p>
+      <button class="btn">ORDER NOW</button>
+    </div>
+
+    <div class="order_card" data-price="4">
+      <img src="assets/order-3.png" alt="order">
+      <h4>Black Coffee</h4>
+      <p>Lorem ipsum dolor sit amet consectetur...</p>
+      <button class="btn">ORDER NOW</button>
+    </div>
+
+
+    </div>
+  </section>
+
+    <div id="cart-sidebar">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <p id="cart-total">Total: $0</p>
+      <button id="checkout-btn" class="btn">Checkout</button>
+      <span id="close-cart">&times;</span>
+    </div>
+    <div id="cart-overlay"></div>
+
+
+
+
+  <section class="section_container event_container" id="event">
+    <div class="event_content">
+      <div class="event_image">
+          <img src="assets/event.jpg" alt="">
+      </div>
+
+      <div class="event_details">
+        <h3 style="color: orange;">DISCOVER</h3>
+        <h2 class="section_header">UPCOMING EVENTS</h2>
+        <p class="section_description" style="text-align: justify;">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente eos quaerat esse aut cupiditate error a ipsam voluptas! Dicta vel omnis natus doloribus, magni et iusto maiores similique? Ipsa?Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, error! Cum, dolorem impedit, molestiae ullam quasi exercitationem asperiores alias optio libero dolore reprehenderit consequatur fugiat ea accusamus ratione eum suscipit!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="reservation" id="contact">
+    <div class="section_container reservation_container">
+      <h3 style="color: orange;">RESERVATION</h3>
+      <h2 class="section_header">BOOK YOUR TABLE</h2>
+      <form action="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="date" placeholder="Date">
+        <input type="time" placeholder="Time">
+        <input type="number" placeholder="People">
+        <button class="btn" type="submit">FIND TABLE</button>
+      </form>
+    </div>
+
+    <img src="assets/order-3.png" alt="" class="reservation_bg-1">
+    <img src="assets/order-2.png" alt="" class="reservation_bg-2">
+  </section>
+
+  <footer class="footer">
+    <div class="secttion_container footer_container">
+      <div class="footer_logo">
+        <img src="assets/logo.png" alt="">
+
+      </div>
+
+      <div class="footer_content"  style="text-align: justify;">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus soluta nisi deleniti delectus magni dolorum, sunt nam, odio accusantium vel nobis ipsum, culpa laborum? Explicabo ex alias quasi quod saepe.</p>
+        <div>
+          <ul class="footer_links">
+              <li>
+                <span style="cursor: pointer;"><i class="ri-map-pin-2-fill"></i></span>MG Road, Banglore, 5000056
+              </li>
+              <li>
+                <span style="cursor: pointer;"><i class="ri-mail-fill"></i></span>info@coffeehouse.com
+              </li>
+          </ul>
+
+          <div class="footer_socials">
+              <a href=""><i class="ri-facebook-circle-fill"></i></a>
+              <a href=""><i class="ri-instagram-fill"></i></a>
+              <a href=""><i class="ri-twitter-fill"></i></a>
+              <a href=""><i class="ri-whatsapp-fill"></i></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer_bar">
+      Copyright @ 2025 Coffee House. All right reserved.
+    </div>
+  </footer>
+
+
+<!-- LOGIN MODAL -->
+<div class="modal" id="login-modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeLoginModal()">✖</span>
+      <h2 style="color: orange;">Bean</h2>
+      <input type="email" id="login-email" placeholder="Enter Email" required>
+      <input type="password" id="login-password" placeholder="Enter Password" required>
+      <p style="color: white;font-size: 10px;">Don't have an account? Please 
+         <a href="#" onclick="switchToRegister()">Sprout</a>
+      </p>
+      <button onclick="handleLogin()">Login</button>
+  </div>
+</div>
+
+<!-- REGISTER MODAL -->
+<div class="modal" id="register-modal">
+  <div class="modal-content">
+      <span class="close" onclick="closeRegisterModal()">✖</span>
+      <h2 style="color: orange;">Sprout</h2>
+      <input type="text" id="register-name" placeholder="Full Name" required>
+      <input type="email" id="register-email" placeholder="Enter Email" required>
+      <input type="password" id="register-password" placeholder="Enter Password" required>
+      <p style="color: white;font-size: 10px;">Already have an account? 
+         <a href="#" onclick="switchToLogin()">Bean</a>
+      </p>
+      <button onclick="handleRegister()">Sprout</button>
+  </div>
+</div>
+
+
+
+  <script src="script.js">
+
+  </script>
+</body>
+</html>
